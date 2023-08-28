@@ -10,15 +10,15 @@ export class CounterComponent {
   activeDecrease = true;
 
   increase() {
-    this.counter++;
+    if (this.counter >= 0) {
+      this.counter++;
+    }
   }
 
   decrease() {
-    this.counter--;
-  }
-
-  inactiveDecrease(){
-    this.activeDecrease = !this.activeDecrease;
+    if (this.counter) {
+      this.counter--;
+    }
   }
 
 }

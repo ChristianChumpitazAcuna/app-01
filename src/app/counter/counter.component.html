@@ -1,8 +1,14 @@
-<div>
-    <span>Contador: {{counter}}</span>
-    <br>
-    <button type="button"(click)="increase()">Incrementar</button>
-    <button type="button" (click)="decrease()" [disabled]="activeDecrease">Disminuir</button>
-    <br>
-    <button type="button" (click)="inactiveDecrease()">Desactivar boton Disminuir</button>
+<div class="container">
+
+    <div class="counter">
+        <h4>CONTADOR
+            <span class="number">{{counter}}</span>
+        </h4>
+    </div>
+
+    <div class="buttons">
+        <button class="btn btn-plus" type="button" (click)="increase()">Incrementar</button>
+        <button class="btn btn-minus" type="button" (click)="decrease()">Disminuir</button>
+    </div>
+
 </div>
